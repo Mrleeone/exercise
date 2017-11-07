@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width:258px;
+				height:258px;
+				margin: 0 auto;
+				margin-top:50px;
+				border:1px solid red;
+				perspective: 500px;
+				/*transform-origin: 0% 0%;*/
+			}
+			div img{
+				position:absolute;
+				left:0;
+				top:0;
+				transform: rotateY(0deg);
+				transform-origin: 0% 100%;
+				transition:all 3s ease 0s;
+			}
+			
+			div:hover img:nth-child(2){
+				transform: rotateY(-180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "box">
+			<img class = "ababy" src="img/baby.png"/>
+			<img class = "hjz" src="img/xiaoming.png"/>
+		</div>
+	</body>
+</html>

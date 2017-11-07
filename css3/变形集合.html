@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		li{
+			width:200px;
+			height:500px;
+			background: skyblue;
+			list-style: none;
+			margin: 10px;
+			float:left;
+		}
+			li:nth-child(odd){
+			background: red;
+			}
+			.dl{
+				height: 500px;
+				transform: scale(1,1) rotate(0deg);
+				transition: all 2s ease 0.1s;
+			}
+			.dl:hover{
+				transform: scale(0.1,0.1) rotate(720deg);
+			}
+			.box{
+				width:258px;
+				height:258px;
+				margin-top:50px;
+				border:1px solid red;
+				perspective: 500px;
+			}
+			.ab{
+				transition: all 2s ease 0s;
+			}
+			.box:hover .ab{
+				transform: rotateY(75deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+		<img class = "dl" src="img/1.jpg"/>
+		<div class = "box"><img class = "ab" src="img/baby.png"/></div>
+		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width:258px;
+				width:258px;
+				border: 1px solid red;
+				perspective:400px;
+				margin: 200px auto;
+			}
+			img{
+				/*transform: translateZ(100px);*/
+				transform: translateY(0deg);
+				transform-origin: 0% 0%;
+				transition:all 3s ease 0s;
+			}
+			div:hover img{
+				transform: rotateY(360deg) translateZ(100px);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/baby.png"/>
+		</div>
+	</body>
+</html>
